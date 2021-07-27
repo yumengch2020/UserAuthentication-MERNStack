@@ -7,9 +7,7 @@ const userRoutes = require("./routes/user");
 const app = express();
 
 mongoose
-  .connect(
-    "mongodb+srv://yumengch:Yumeng2021@cluster0.m2kxy.mongodb.net/user-auth?retryWrites=true&w=majority"
-  )
+  .connect("<your credentials>")
   .then(() => {
     console.log("Connected to databse!");
   })
